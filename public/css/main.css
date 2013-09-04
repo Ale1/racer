@@ -1,0 +1,49 @@
+.back{
+  background-image:url('space.jpg');
+  background-size:cover;
+  margin-left:50px;
+  padding-top: 50px;
+  padding-bottom:50px;
+  padding-left:20px;
+  padding-right:20px;
+  width:800px;
+  height:200px;
+}
+
+
+.track {
+  position:relative;
+  background:rgba(100,30,30,0.5);
+  height: 70px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.car {
+  position:relative;
+  width:20px;
+  height:10px;
+  left:10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-weight:bold;
+}
+
+.goal {
+  float:right;
+  height:70px;
+  width:5%;
+  background-image:url('toilet.jpeg');
+  background-size: contain;
+  margin: 0 auto;
+  overflow:hidden;
+
+}
+
+h2 {
+  margin: 50px;
+}
+
+.startform {
+  padding:20px;
+}
