@@ -2,26 +2,30 @@
 <!doctype html>
 <html>
 <head>
-
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" relative='/../../public/js/application.js'></script>
     <link rel="stylesheet" type="text/css" relative='/../../public/css/main.css'>
 
-
 </head>
 <body>
-<center><h2> OH NO! ITS POST-CHIPOTLE RUSH HOUR! <br> WHO CAN MAKE IT TO THE TOILET FIRST?</h2>
-<p> press 'Q' to advance <%= params[:handle1]%> and 'W' for <%=params[:handle2]%>  </p>
+<center><h2> OH NO! ITS POST-CHIPOTLE RUSH HOUR! <br> WHY IS THIS NOT UPDATING??</h2>
+<p> press 'Q' to advance <%= session[:player1].last%> and 'P' for <%=session[:player2].last%>  </p>
 </center><div class='back'>
 <div class='goal' id='goal'></div>
 <div class='track'> 
-<div class = 'car' id='ONE'><font color='blue'><%= params[:handle1]%></font></div>
-<div class ='car' id='TWO'><font color='red'><%= params[:handle2]%></font></div>
+<div class = 'car' id='ONE'><font color='blue'><%= params[:handle1]%></font>
+   <form> <input type="hidden" value=<%= session[:player1].last%>> </form>
+   </div>
+<div class ='car' id='TWO'><font color='red'><%= params[:handle2]%></font>
+ <form> <input type="hidden" value=<%= session[:player2].last%>> </form>
+</div>
+
 
 </div></div>
 </div>
 <br>
-<center><a href="/">BACK</a><center>
+<center><a href="/back">BACK</a><center>
 </body>
 </html>
 
