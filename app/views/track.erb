@@ -10,19 +10,18 @@
 
 </head>
 <body>
-<h2> OH NO! ITS POST-CHIPOTLE RUSH HOUR!</h2>
-<h3> <%= params.inspect %> </h3>
-<div class='back'>
+<center><h2> OH NO! ITS POST-CHIPOTLE RUSH HOUR! <br> WHO CAN MAKE IT TO THE TOILET FIRST?</h2>
+<p> press 'Q' to advance <%= params[:handle1]%> and 'W' for <%=params[:handle2]%>  </p>
+</center><div class='back'>
 <div class='goal' id='goal'></div>
 <div class='track'> 
-<div class = 'car' id='ONE'><font color='blue'>IAN></font></div>
-<div class ='car' id='TWO'><font color='red'>JIMMY></font></div>
+<div class = 'car' id='ONE'><font color='blue'><%= params[:handle1]%></font></div>
+<div class ='car' id='TWO'><font color='red'><%= params[:handle2]%></font></div>
 
+</div></div>
 </div>
-
-<!-- <button id="butt">Test</button> -->
-
-</back>
+<br>
+<center><a href="/">BACK</a><center>
 </body>
 </html>
 
